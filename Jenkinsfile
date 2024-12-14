@@ -11,7 +11,7 @@ pipeline {
         stage('python') {
             steps {
                 echo "python"
-                sh 'python myapp.py'
+                sh 'python3 myapp.py'
             }
         }
     }
