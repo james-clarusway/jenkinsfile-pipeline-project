@@ -8,5 +8,11 @@ pipeline {
                 echo 'not using shell in the Jenkinsfile'
             }
         }
+        stage('build') {
+            steps {
+                echo "python"
+                sh 'python myapp.py'
+            }
+        }
     }
 }
